@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  background: url("../public/img/bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  color-scheme: dark;
+  height: 100%;
+}
