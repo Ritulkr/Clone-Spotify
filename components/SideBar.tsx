@@ -136,7 +136,7 @@ const SideBar: React.FC<sidebarProps> = ({ children }) => {
               />
             ) : (
               <p className="text-xl font-bold">
-                {user?.user_metadata?.name}
+                {user?.user_metadata?.name[0]}
               </p>
             )}
           </div>
