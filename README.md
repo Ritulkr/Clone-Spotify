@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+---
+
+# Spotify Clone
+
+A clone of the popular music streaming service Spotify, built using Next.js, TypeScript, Tailwind CSS, Supabase, and Stripe.
+
+## Overview
+
+This project aims to replicate the core functionalities of Spotify, allowing users to browse, search for, and listen to music. It utilizes modern web technologies and services to provide a seamless user experience.
+
+## Features
+
+- User authentication with Supabase
+- Music playback and streaming
+- Search functionality to find songs, artists, and albums
+- Integration with Stripe for premium subscriptions
+- Responsive design with Tailwind CSS
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/): React framework for server-rendered React applications.
+- [TypeScript](https://www.typescriptlang.org/): A superset of JavaScript that adds static types.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for building custom designs.
+- [Supabase](https://supabase.io/): An open-source alternative to Firebase, providing backend services and a PostgreSQL database.
+- [Stripe](https://stripe.com/): Payment processing platform for online businesses.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+git clone <repository_url>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Set up environment variables:
 
-## Learn More
+   - Create a `.env.local` file in the root directory.
+   - Add the following environment variables:
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=<your_supabase_url>
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=<your_supabase_anon_key>
+   NEXT_PUBLIC_STRIPE_PUBLIC_KEY=<your_stripe_public_key>
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm run dev
+```
 
-## Deploy on Vercel
+5. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To deploy the application, follow the deployment instructions for your chosen hosting platform. Ensure you set up environment variables for production as well.
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
